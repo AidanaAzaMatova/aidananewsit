@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aidana News</title>
+</head>
+<body>
+<h1>IT саласындағы жаңалықтар тізбегі</h1>
+{% if new %}
+    <ul>
+    {% for ne in new %}
+       <li>{{ ne.new_text }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Жаңалықтар жоқ</p>
+{% endif %}
+</body>
+</html>
